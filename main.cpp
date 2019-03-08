@@ -24,14 +24,12 @@ void test_Picture02()
 void test_Picture03()
 {
 	Picture p1 {"a45.txt"};
-	//Picture p2 {p1};
+	Picture p2 {p1};
 
 	p1.frame('#', 1);
 	p1.draw();
 
-
-	//p2.draw();
-
+	p2.draw();
 }
 
 void test_PicturePair01()
@@ -76,7 +74,7 @@ void test_PicturePair04()
 	Picture_Pair pp {&p1, &p2};
 	Picture p3 {pp};
 
-    p3.frame('#', 2);
+	p3.frame('#', 2);
 	p3.draw();
 }
 
@@ -113,7 +111,6 @@ void test_PicturePair07()
 
 	p3.draw();
 	p4.draw();
-
 }
 
 void test_Banner()
@@ -158,9 +155,8 @@ int main(int argc, char **argv)
 	cout << endl;
 
 	cout << "test_Picture03" << endl;
- test_Picture03();
+	test_Picture03();
 	cout << endl;
-
 
 	cout << "test_PicturePair01" << endl;
 	test_PicturePair01();
@@ -193,7 +189,6 @@ int main(int argc, char **argv)
 	cout << "test_Banner" << endl;
 	test_Banner();
 	cout << endl;
-
 
 	return 0;
 }
